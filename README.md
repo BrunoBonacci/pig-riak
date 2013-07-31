@@ -2,6 +2,11 @@
 
 A [UDF StoreFunc](http://pig.apache.org/docs/r0.8.0/udf.html#Store+Functions) for [Apache Pig](http://pig.apache.org/) designed to bulk-load data into [Riak](http://basho.com/riak/). Inspired by [pig-redis](https://github.com/mattb/pig-redis) store function.
 
+## Please note: The loader uses the REST APIs, therefore it is increbibly slow for large datasets. 
+To improve performances (not included in this release):
+  - Use ProtBuf Apis
+  - Batch writes
+
 ## Compiling and running
 
 Compile:
